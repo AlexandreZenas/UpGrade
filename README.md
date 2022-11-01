@@ -1,2 +1,2 @@
-# hellow word
- test curso em video
+# hello, word !
+ teste curso em video 
