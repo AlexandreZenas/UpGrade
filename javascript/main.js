@@ -18,4 +18,6 @@ logo.addEventListener('click',()=>{
     h1ContainerHome.style.color =`rgb(${red},${green},${blue})`;
 })
 // adicionado pelo desktop
+
+// adicionado pelo desktop
 //ueh
