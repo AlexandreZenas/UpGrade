@@ -20,4 +20,3 @@ logo.addEventListener('click',()=>{
 // adicionado pelo desktop
 
 // adicionado pelo desktop
-//ueh
