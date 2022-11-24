@@ -1,23 +1,27 @@
-var navAnimation = document.querySelector('nav');
-function navFunction(){
-    navAnimation.classList.remove('hidden');
+/* animação hidden > visible*/
+var elementInvisible = [
+    {
+        'navInvisible':document.querySelector('nav'),
+        'h1Invisible':document.querySelectorAll('div.containerHome h1')[0],
+        'h2Invisible':document.querySelectorAll('div.containerHome h2')[0]
+    }
+];
+function removeInvisible(){
+    elementInvisible[0].navInvisible.classList.remove('hidden');
+    elementInvisible[0].h1Invisible.classList.remove('h1Invisible');
+    elementInvisible[0].h2Invisible.classList.remove('h2Invisible');
 };
-setTimeout(navFunction, 1080)
+setTimeout(removeInvisible, 700)
 
+/* background video loop*/
+var videoBackground = document.querySelectorAll('.intro')[0];
+function animationVideo(){
+    videoBackground.classList.add('intro-remove');
+};
+setTimeout(animationVideo, 6580)
 
-//seletor de cores aleatórias
-var logo = document.querySelectorAll('.navLogo')[0];
-var h1ContainerHome = document.querySelectorAll('.containerHome h1')[0];
-
-logo.addEventListener('click',()=>{
-    const [red, green, blue] = [
-        Math.floor(Math.random() * 255),
-        Math.floor(Math.random() * 255),
-        Math.floor(Math.random() * 255)        
-    ]
-    h1ContainerHome.style.color =`rgb(${red},${green},${blue})`;
-})
-// adicionado pelo desktop
-
-// adicionado pelo desktop
-//ueh
+var videoBackgroundLoop = document.querySelectorAll('.intro-loop')[0];
+function animationVideoLoop(){
+    videoBackgroundLoop.classList.remove('introLoopHidden');
+};
+setTimeout(animationVideoLoop, 6580)

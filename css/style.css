@@ -31,7 +31,7 @@ nav{
     padding: 3% 4% 0 4%;
     align-items: center;
     z-index: 999;
-    transition: 3s;
+    transition: 0.8s;
     opacity: 1;
 }nav.hidden{
     visibility: hidden;
@@ -81,7 +81,12 @@ section.homeIntro div.backgroundVideo{
         object-fit: cover;
         height: 100%;
         width: 100%;
-        }               
+        }div.backgroundVideo video.intro-remove{display:none;}            
+    div.backgroundVideo video.intro-loop{
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    } div.backgroundVideo video.introLoopHidden{display: none;}               
 /* Home Intens */
 section.homeIntro div.containerHome{
     height: 100%;
@@ -98,9 +103,11 @@ section.homeIntro div.containerHome{
         margin: 5.8vw 0 0 0;
         color: rgb(255, 255, 255);
         line-height: 1.2;
+        transition: 1.5s;
     }
-    div.containerHome h1.eventColor{
-        color:var('cores');
+    div.containerHome h1.h1Invisible{
+        opacity: 0;
+        transform: translate(0, -50px);
     }
     div.containerHome h2{
         font-size: 1.11111vw;
@@ -108,38 +115,9 @@ section.homeIntro div.containerHome{
         color: white;
         line-height: 1.2;
         margin-block-start: 0.83em;
+        transition: 1.5s;
     }
-/* section skills */
-section.skillsSection{
-    background-color: #141414;
-}
-section.skillsSection div.tituloSkills{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-    div.tituloSkills h1{
-        color: white;
-        font-size: 4.5rem;
-        margin: 2%;
+    div.containerHome h2.h2Invisible{
+        opacity: 0;
+        transform: translate(0, -50px);
     }
-    div.buttonsSkills button{
-        font-size: 3rem;
-        width: 100px;
-    }
-/* Skills */
-section.skillsSection div.boxSkills{
-    width: 80%;
-    background-color: white;
-    height: 400px;
-    display: flex;
-    margin-bottom: 100px;
-    justify-content: space-evenly;
-}
-div.boxSkills div.boxConteudo{
-    background-color: gray;
-    margin: 2% 0;
-    border-radius: 30px;
-}
