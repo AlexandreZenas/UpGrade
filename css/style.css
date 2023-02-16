@@ -78,9 +78,9 @@ section.homeIntro div.backgroundVideo{
     padding: 0;
 }
     div.backgroundVideo video.intro{
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
         }div.backgroundVideo video.intro-remove{display:none;}            
     div.backgroundVideo video.intro-loop{
         object-fit: cover;
