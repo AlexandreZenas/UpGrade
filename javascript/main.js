@@ -1,5 +1,4 @@
 /* animação hidden > visible*/
-//  GIT COMMIT
 var elementInvisible = [
     {
         'navInvisible':document.querySelector('nav'),
